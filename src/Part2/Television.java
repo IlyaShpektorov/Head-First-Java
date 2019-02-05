@@ -5,11 +5,11 @@ import java.util.Scanner;
 public class Television {
 	int currectChannel;
 	int currectVolume;
-	//ñòàòóñ âûêë/âêë
+	//ÑÑ‚Ð°Ñ‚ÑƒÑ Ð²Ñ‹ÐºÐ»/Ð²ÐºÐ»
 	boolean status;
 
 	
-	//Îòîáðàæåíèå âèäåîðÿäà
+	//ÐžÑ‚Ð¾Ð±Ñ€Ð°Ð¶ÐµÐ½Ð¸Ðµ Ð²Ð¸Ð´ÐµÐ¾Ñ€ÑÐ´Ð°
 	public void show() {
 		while (status = true) {
 			//showTV
@@ -17,7 +17,7 @@ public class Television {
 		};
 	}
 	
-	//ðàáîòà ñ êàíàëàìè
+	//Ñ€Ð°Ð±Ð¾Ñ‚Ð° Ñ ÐºÐ°Ð½Ð°Ð»Ð°Ð¼Ð¸
 	public void channelUp() {
 		currectChannel++;
 		if (currectChannel > 40 ) {
@@ -31,7 +31,7 @@ public class Television {
 		if (currectChannel <= 0 ) {
 			currectChannel = 40;
 		};
-		System.out.println("Êàíàë: " + currectChannel);
+		System.out.println("ÐšÐ°Ð½Ð°Ð»: " + currectChannel);
 	}
 	
 	public void chooseChannel() {
@@ -46,10 +46,10 @@ public class Television {
 		} if (currectChannel > 40 ) {
 			currectChannel = 40;
 		};
-		System.out.println("Êàíàë: " + currectChannel);
+		System.out.println("ÐšÐ°Ð½Ð°Ð»: " + currectChannel);
 	}
 	
-	//ðàáîòà ñ ãðîìêîñòüþ
+	//Ñ€Ð°Ð±Ð¾Ñ‚Ð° Ñ Ð³Ñ€Ð¾Ð¼ÐºÐ¾ÑÑ‚ÑŒÑŽ
 	
 	public void volumeUp() {
 		currectVolume++;
@@ -62,7 +62,7 @@ public class Television {
 	
 	public void chooseVolume(int volume) {
 		currectVolume = volume;
-		System.out.println("Ãðîìêîñòü: "+ currectVolume);
+		System.out.println("Ð“Ñ€Ð¾Ð¼ÐºÐ¾ÑÑ‚ÑŒ: "+ currectVolume);
 		
 		if (currectVolume > 100) {
 			currectVolume = 100;
