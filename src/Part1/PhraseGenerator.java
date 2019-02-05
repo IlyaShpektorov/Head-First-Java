@@ -3,14 +3,17 @@ package Part1;
 public class PhraseGenerator {
 
 	public static void main(String[] args) {
-		String phrase = "1";
 		
-		while (phrase != "умный трус") {
+		Boolean phraseComlete = false;
+		
+		while (true) {
+		String phrase = "СѓРјРЅС‹Р№ С‚СЂСѓСЃ";
+		
 		String wordListOne [] = {
-				"красивый","умный","веселый","смешной","удивительный","ласковый"
+				"РєСЂР°СЃРёРІС‹Р№","СѓРјРЅС‹Р№","РІРµСЃРµР»С‹Р№","СЃРјРµС€РЅРѕР№","СѓРґРёРІРёС‚РµР»СЊРЅС‹Р№","Р»Р°СЃРєРѕРІС‹Р№"
 		};
 		String wordListTwo [] = {
-			"чудик","пёс","врун","вор","кот","слон","зевака","трус","чайник","принц"	
+			"С‡СѓРґРёРє","РїС‘СЃ","РІСЂСѓРЅ","РІРѕСЂ","РєРѕС‚","СЃР»РѕРЅ","Р·РµРІР°РєР°","С‚СЂСѓСЃ","С‡Р°Р№РЅРёРє","РїСЂРёРЅС†"	
 		}; 
 		int oneLength = wordListOne.length;
 		int twoLength = wordListTwo.length;
@@ -19,10 +22,18 @@ public class PhraseGenerator {
 		int rand1 = (int) (Math.random() * oneLength);
 		int rand2 = (int) (Math.random() * twoLength);
 		
-		phrase = wordListOne[rand1]+" "+wordListTwo[rand2];	
+		String phraseComb = wordListOne[rand1]+" "+wordListTwo[rand2];	
 				
-		System.out.println(phrase);
-		};
+		if (phrase == phraseComb) {
+			System.out.println(phraseComb);
+			break;
+					
+		}else {
+				System.out.println(phraseComb);
+				System.out.println("РµС‰Рµ СЂР°Р·!");
+		}
+		
+		}
 		
 	}
 
