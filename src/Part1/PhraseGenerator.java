@@ -24,7 +24,7 @@ public class PhraseGenerator {
 		
 		String phraseComb = wordListOne[rand1]+" "+wordListTwo[rand2];	
 				
-		if (phrase == phraseComb) {
+		if (phrase.equals (phraseComb))	{
 			System.out.println(phraseComb);
 			break;
 					
