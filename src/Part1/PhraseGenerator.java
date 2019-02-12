@@ -4,8 +4,6 @@ public class PhraseGenerator {
 
 	public static void main(String[] args) {
 		
-		Boolean phraseComlete = false;
-		
 		while (true) {
 		String phrase = "умный трус";
 		
